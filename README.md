@@ -64,11 +64,15 @@ printResults()
 
 
 Algorithm Descriptions:
+
+
 1)Breadth-First Search visits graph nodes level by level.BFS uses a Queue data structure.
 
 
 
 BFS Step by step:
+
+
 
 
 
@@ -79,7 +83,11 @@ BFS use cases:
 
 
 
+
+
 1.Shortest path in unweighted graph.2.Network broadcasting.3.GPS systems.4.Web crawling.
+
+
 
 
 
@@ -89,9 +97,13 @@ Where:V = vertices,E = edges
 
 
 
+
+
 2)Depth-First Search (DFS)
 
 Depth-First Search explores graph nodes deeply before backtracking.DFS uses Recursion or Stack.
+
+
 
 
 
@@ -100,8 +112,12 @@ DFS Step by step:
 
 
 
+
+
 DFS Use Cases:
 1.Path finding.2.Cycle detection.3.Maze solving4.Topological sorting
+
+
 
 
 
@@ -120,11 +136,15 @@ Experimental Results:
 
 
 
+
+
 Larger graphs require more traversal time.
 BFS and DFS both showed linear growth.
 Results match expected complexity O(V + E).
 BFS was slightly faster in some experiments.
 Traversal order changes depending on graph structure.
+
+
 
 
 
@@ -140,38 +160,33 @@ Higher memory usage     	Lower memory usage
 
 Analysis Questions:
 
-How does graph size affect BFS and DFS performance?
 
+How does graph size affect BFS and DFS performance?
 As the number of vertices and edges increases, traversal time also increases because more nodes must be visited.
 
 
 
 Which traversal is faster in your experiments?
-
 BFS was slightly faster in small graphs, but both algorithms showed similar performance.
 
 
 
 Do results match expected complexity O(V + E)?
-
 Yes. Both BFS and DFS visit each vertex and edge once.
 
 
 
 How does graph structure affect traversal order?
-
 Different edge connections produce different traversal paths and visiting order.
 
 
 
 When is BFS preferred over DFS?
-
 BFS is preferred when finding the shortest path in an unweighted graph.
 
 
 
 What are the limitations of DFS?
-
 DFS may go very deep into the graph and can consume stack memory because of recursion.
 
 
